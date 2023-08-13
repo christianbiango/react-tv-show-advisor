@@ -1,0 +1,22 @@
+.icon {
+  position: absolute;
+  margin: 7px 0 0 15px;
+}
+.input {
+  border-radius: 30px;
+  background: #d9d9d96e;
+  height: 30px;
+  font-weight: 100;
+  font-size: 20px;
+  width: 100%;
+  border-color: transparent;
+  padding: 18px 18px 18px 50px;
+  color: white;
+}
+.input::placeholder {
+  color: rgb(194, 194, 194);
+}
+.input:focus {
+  border: solid 1px white;
+  outline-width: 0; /* Enlève le border bleu */
+}
