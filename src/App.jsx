@@ -7,7 +7,6 @@ import { BACKDROP_BASE_URL } from "./config";
 import { TVShowDetail } from "./components/TVShowDetail/TVShowDetail";
 import { Logo } from "./components/Logo/Logo";
 import logo from "./assets/img/logo.png";
-import { TvShowListItem } from "./components/TvShowListItem/TvShowListItem";
 import { TVShowList } from "./components/TVShowList/TVShowList";
 import { SearchBar } from "./components/SearchBar/SearchBar";
 
@@ -22,7 +21,9 @@ export function App() {
         setCurrentTVShow(populars[0]);
       }
     } catch (err) {
-      alert("Erreur lors de la recherche des séries populaires " + err.message);
+      alert(
+        "Erreur lors de la récupération des séries populaires " + err.message
+      );
     }
   }
 
